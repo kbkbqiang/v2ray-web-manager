@@ -1,6 +1,9 @@
 # v2ray-web-manager 
  [![Build Status](https://travis-ci.com/master-coder-ll/v2ray-web-manager.svg?branch=master)](https://travis-ci.com/master-coder-ll/v2ray-web-manager) 
-
+ [![Quality Gate](https://sonarcloud.io/api/project_badges/measure?project=master-coder-ll_v2ray-web-manager&metric=alert_status)](https://sonarcloud.io/dashboard/index/master-coder-ll_v2ray-web-manager)
+ [![reliability_rating]( https://sonarcloud.io/api/project_badges/measure?project=master-coder-ll_v2ray-web-manager&metric=reliability_rating)](https://sonarcloud.io/dashboard/index/master-coder-ll_v2ray-web-manager)
+ [![bugs](https://sonarcloud.io/api/project_badges/measure?project=master-coder-ll_v2ray-web-manager&metric=bugs)](https://sonarcloud.io/dashboard/index/master-coder-ll_v2ray-web-manager)
+ 
  v2ray-web-manager 项目包含admin管理端和proxy端，admin端提供管理功能。proxy端提供核心的流量控制、账号识别、流量转发功能，
  同时支持多种转发流量模型（1对1，1对多）。
  
@@ -8,7 +11,6 @@
  
  ssl/tls 支持使用nginx 等工具提供，也可以套cdn提供。
 
- 项目本质上是一个管理工具，并不存在任何*穿墙*功能。
  
   ## 特征：
   * 流量控制(qos)-无敌的速率、流量、连接数控制 ，一切都可以灵活定制
@@ -111,7 +113,7 @@
                如果你需要减少内存占用，在运行java 命令上加 `-Djava.compiler=NONE` ，会大幅减少java内存占用(约30~50%)，同时降低性能,大幅度增加启动时间。
                出现一些动态代理的问题不要用。~~
         
-     
+      
         
 ## 测试
 
@@ -126,8 +128,7 @@
   * 查看项目的 [todo-list](https://github.com/master-coder-ll/v2ray-web-manager/blob/master/todo-list.md),如果你有能力并且有时间可以实现 欢迎 pull request
   * 任何issue/文档错误，你都可以pull request
   * 想法/优化/新功能，先讨论在pull request 
-                
-## [->理论-<](https://github.com/master-coder-ll/v2ray-web-manager/blob/master/theory.md)
+
    
 ## 架构
 现在架构：
