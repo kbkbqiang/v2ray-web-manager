@@ -146,7 +146,7 @@ wget -c --no-check-certificate https://raw.githubusercontent.com/master-coder-ll
 ####  5. 配置v2ray
 
 ```bash
-# 备份默认v2ray默认配置
+# 备份v2ray默认配置
 mv /etc/v2ray/config.json /etc/v2ray/config.json.bak
 
 # 复制配置到v2ray目录
@@ -174,9 +174,15 @@ nohup java -jar -Xms40m -Xmx40m -XX:MaxDirectMemorySize=10M -XX:MaxMetaspaceSize
 ```bash
 # 查看admin日志
 tail -100f /opt/jar/logs/admin.log
+
+# 查看admin的错误日志(version > v3.1.5)
+tail -100f /opt/jar/logs/admin.log.ERROR
     
 # 查看 v2ray-proxy日志
-tail -f /opt/jar/logs/v2ray-proxy.log
+tail -100f /opt/jar/logs/v2ray-proxy.log
+
+# 查看v2ray-proxy的错误日志(version > v3.1.5)
+tail -100f /opt/jar/logs/v2ray-proxy.log.ERROR
     
 # ctrl+c 退出查看日志
 ```
